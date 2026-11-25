@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Sophia Oliveira, estudante de Análise e Desenvolvimento de Sistemas em Brasília.">
+  <meta name="theme-color" content="#2A1018">
+  <title>Sophia Oliveira | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="img/perfil.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <noscript><style>.preloader{display:none!important}</style></noscript>
+</head>
+<body class="carregando">
+  <div class="preloader" id="preloader" role="dialog" aria-label="Abertura do portfólio">
+    <div class="split split-esq" aria-hidden="true"></div>
+    <div class="split split-dir" aria-hidden="true"></div>
+    <div class="preloader-ui">
+      <p class="preloader-kicker">ADS · 2026</p>
+      <p class="preloader-nome">Sophia Oliveira</p>
+      <p class="preloader-pct" id="preloaderPct" aria-hidden="true">00%</p>
+      <div class="preloader-trilho" aria-hidden="true">
+        <span class="preloader-barra" id="preloaderBarra"></span>
+      </div>
+    </div>
+    <button class="preloader-pular" id="preloaderPular" type="button">Pular</button>
+  </div>
+
+  <div class="progresso-leitura" id="progressoLeitura" aria-hidden="true"></div>
+  <svg class="grain" aria-hidden="true" focusable="false">
+    <filter id="ruido">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#ruido)"/>
+  </svg>
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor-anel"></span>
+    <span class="cursor-ponto"></span>
+  </div>
+
+  <div class="moldura">
+    <div class="coluna">
+      <header class="header" id="topo">
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="#inicio" class="logo magnetico">Sophia Oliveira</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menuLista">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="menu" id="menuLista">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#aprendendo">Aprendendo</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+          <a class="status magnetico" href="#faq" title="Disponível para estágio e projetos">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-curto">Disponível</span>
+            <span class="status-longo">Disponível para estágio &amp; projetos</span>
+          </a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="inicio">
+          <div class="hero-topo">
+            <p class="vertical">Portfólio acadêmico · Brasília · DF</p>
+            <div class="hero-copy">
+              <p class="olho">
+                <span class="mascara"><span class="mascara-inner">Análise e Desenvolvimento de Sistemas</span></span>
+              </p>
+              <h1>
+                <span class="mascara"><span class="mascara-inner">Sophia</span></span>
+                <span class="mascara"><span class="mascara-inner">Oliveira</span></span>
+              </h1>
+              <p class="subtitulo hero-atraso">Estudante de Análise e Desenvolvimento de Sistemas<br>(1º Período)</p>
+              <p class="chamada hero-atraso">Interessada na área de tecnologia, estou construindo uma base sólida para unir a programação ao meu grande objetivo: a aprovação em concursos públicos.</p>
+              <a href="#sobre" class="btn magnetico hero-atraso">Conheça minha trajetória</a>
+            </div>
+            <figure class="retrato hero-atraso">
+              <span class="retrato-anel" aria-hidden="true"></span>
+              <img src="img/perfil.jpeg" alt="Foto de perfil de Sophia Oliveira" width="640" height="800">
+              <figcaption class="badge-localizacao">
+                <svg class="pin-icone" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 21s-6-5.686-6-10a6 6 0 1 1 12 0c0 4.314-6 10-6 10z"/>
+                  <circle cx="12" cy="11" r="2.2"/>
+                </svg>
+                Brasília, DF
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="hero-base">
+            <article class="bloco-vinho hero-atraso">
+              <p class="script script-claro">em detalhe</p>
+              <h2>Mais do que disciplinas.</h2>
+              <p>Uma formação objetiva, com espaço para segurança, inteligência artificial e o ritmo de quem estuda para concurso.</p>
+              <ul class="checagem">
+                <li>Base técnica em ADS</li>
+                <li>Segurança da Informação</li>
+                <li>Inteligência Artificial</li>
+                <li>Foco em concursos públicos</li>
+              </ul>
+            </article>
+            <ol class="indice-hero hero-atraso">
+              <li><span>01</span> Front-end</li>
+              <li><span>02</span> Algoritmos</li>
+              <li><span>03</span> Dados</li>
+              <li><span>04</span> Design</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="secao" id="sobre">
+          <div class="container">
+            <header class="secao-cabeca">
+              <span class="secao-num">02</span>
+              <div>
+                <p class="script">trajetória</p>
+                <h2 class="titulo-secao"><span class="mascara"><span class="mascara-inner">Sobre mim e objetivos</span></span></h2>
+              </div>
+            </header>
+
+            <div class="bento">
+              <article class="card card-largo" data-reveal>
+                <p class="card-indice">01 — Por que ADS?</p>
+                <h3>Uma graduação direta ao que eu quero construir.</h3>
+                <p>Escolhi Análise e Desenvolvimento de Sistemas pela possibilidade de entrar mais rápido no mercado de trabalho, já que meu principal objetivo é ser aprovada em um concurso público. Além disso, pretendo me aprofundar em Segurança da Informação. Também quero estudar mais sobre Inteligência Artificial, pois ela faz parte do presente e continuará evoluindo cada vez mais.</p>
+              </article>
+              <article class="card" data-reveal>
+                <p class="card-indice">02 — Próximos passos</p>
+                <h3>A base dos próximos semestres.</h3>
+                <p>Nos próximos semestres, pretendo aprofundar meus conhecimentos em Bancos de Dados, Engenharia de Software e Segurança da Informação. Meu objetivo é construir uma boa base técnica que me prepare tanto para desenvolver soluções eficientes quanto para conquistar a aprovação em concursos públicos de nível superior ou na área de TI.</p>
+              </article>
+              <article class="pilar" data-reveal>
+                <span class="pilar-num">01</span>
+                <h3>ADS</h3>
+                <p>Entrada mais rápida no mercado e formação de nível superior alinhada à tecnologia.</p>
+              </article>
+              <article class="pilar" data-reveal>
+                <span class="pilar-num">02</span>
+                <h3>Segurança da Informação</h3>
+                <p>Aprofundar a proteção de dados e o cuidado com sistemas confiáveis.</p>
+              </article>
+              <article class="pilar pilar-escuro" data-reveal>
+                <span class="pilar-num">03</span>
+                <h3>Inteligência Artificial</h3>
+                <p>Estudar uma área que já faz parte do presente e segue evoluindo.</p>
+              </article>
+              <article class="pilar" data-reveal>
+                <span class="pilar-num">04</span>
+                <h3>Concursos públicos</h3>
+                <p>O objetivo central: aprovação em concurso de nível superior ou na área de TI.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="secao secao-alt" id="aprendendo">
+          <div class="container">
+            <header class="secao-cabeca">
+              <span class="secao-num">03</span>
+              <div>
+                <p class="script">agora</p>
+                <h2 class="titulo-secao"><span class="mascara"><span class="mascara-inner">O que estou aprendendo hoje</span></span></h2>
+              </div>
+            </header>
+            <div class="grid-aprender">
+              <article class="card card-icone" data-reveal tabindex="0">
+                <span class="card-indice">01</span>
+                <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><polyline points="8 6 2 12 8 18"/><polyline points="16 6 22 12 16 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+                <h3>Desenvolvimento Front-end para Web</h3>
+                <p class="stack-preview">HTML · CSS · JavaScript</p>
+              </article>
+              <article class="card card-icone" data-reveal tabindex="0">
+                <span class="card-indice">02</span>
+                <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7 7.5 11 16M17 7.5 13 16M7.5 6h9"/></svg>
+                <h3>Algoritmos e Pensamento Computacional</h3>
+                <p class="stack-preview">Lógica · Estruturas · Raciocínio</p>
+              </article>
+              <article class="card card-icone" data-reveal tabindex="0">
+                <span class="card-indice">03</span>
+                <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+                <h3>Modelagem de Banco de Dados</h3>
+                <p class="stack-preview">Entidades · Relações · Modelagem</p>
+              </article>
+              <article class="card card-icone" data-reveal tabindex="0">
+                <span class="card-indice">04</span>
+                <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-.9 2-1.8 0-1.2-1-1.6-1-2.7 0-1 .8-1.7 1.8-1.7H17a4 4 0 0 0 4-4C21 6.4 17 3 12 3z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7.5" r="1"/><circle cx="14.5" cy="7.5" r="1"/></svg>
+                <h3>Design Profissional</h3>
+                <p class="stack-preview">Composição · Hierarquia · Detalhe</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="secao" id="hobbies">
+          <div class="container">
+            <header class="secao-cabeca">
+              <span class="secao-num">04</span>
+              <div>
+                <p class="script">fora da tela</p>
+                <h2 class="titulo-secao"><span class="mascara"><span class="mascara-inner">Meus hobbies: jogos de tabuleiro</span></span></h2>
+              </div>
+            </header>
+            <p class="intro" data-reveal>Gosto de reunir amigos e família ao redor de um tabuleiro. Toque em um jogo para ver como funciona.</p>
+
+            <div class="filtros" role="group" aria-label="Filtrar jogos" data-reveal>
+              <button class="filtro ativo" data-filtro="todos" type="button">Todos</button>
+              <button class="filtro" data-filtro="estrategia" type="button">Estratégia</button>
+              <button class="filtro" data-filtro="criatividade" type="button">Criatividade</button>
+              <button class="filtro" data-filtro="social" type="button">Dedução social</button>
+            </div>
+
+            <div class="grid-jogos" id="gridJogos">
+              <article class="jogo" data-reveal data-categoria="estrategia" data-titulo="Ubongo" data-tag="Estratégia" data-img="img/ubongo.jpeg" data-resumo="Um quebra-cabeça contra o tempo: encaixe as peças antes que a ampulheta acabe." data-dinamica="Rápido, espacial e contra a ampulheta." data-detalhe="Cada jogador recebe peças coloridas de formatos diferentes e precisa encaixá-las em um tabuleiro-quebra-cabeça antes que a ampulheta acabe. Quem completa o desafio primeiro pega as pedras preciosas. É um jogo rápido, que treina o raciocínio espacial e a agilidade mental." tabindex="0" role="button">
+                <div class="jogo-moldura">
+                  <img src="img/ubongo.jpeg" alt="Caixa do jogo Ubongo" loading="lazy">
+                </div>
+                <div class="jogo-info">
+                  <p class="card-indice">Estratégia</p>
+                  <h3>Ubongo</h3>
+                  <p>Um quebra-cabeça contra o tempo: encaixe as peças antes que a ampulheta acabe.</p>
+                </div>
+              </article>
+              <article class="jogo" data-reveal data-categoria="criatividade" data-titulo="Dixit" data-tag="Criatividade" data-img="img/dixit.jpeg" data-resumo="Cartas ilustradas e dicas criativas: descubra qual imagem o narrador escolheu." data-dinamica="Imaginação, dica na medida e leitura de quem joga junto." data-detalhe="Um jogador escolhe uma carta ilustrada e dá uma dica sobre ela, que pode ser uma frase, um som ou uma palavra. Os outros escolhem em suas mãos a carta que melhor combina e todos tentam adivinhar qual era a original. A dica não pode ser óbvia demais nem difícil demais. Um jogo de imaginação e sensibilidade." tabindex="0" role="button">
+                <div class="jogo-moldura">
+                  <img src="img/dixit.jpeg" alt="Caixa do jogo Dixit" loading="lazy">
+                </div>
+                <div class="jogo-info">
+                  <p class="card-indice">Criatividade</p>
+                  <h3>Dixit</h3>
+                  <p>Cartas ilustradas e dicas criativas: descubra qual imagem o narrador escolheu.</p>
+                </div>
+              </article>
+              <article class="jogo" data-reveal data-categoria="estrategia" data-titulo="Pega em 6!" data-tag="Estratégia" data-img="img/pega-em-6.jpeg" data-resumo="Jogue suas cartas com cuidado: a sexta da fila faz você levar todas." data-dinamica="Atenção, tática e uma pitada de sorte." data-detalhe="Todos escolhem uma carta ao mesmo tempo e as colocam nas fileiras da mesa, em ordem crescente. Quem coloca a sexta carta de uma fileira é obrigado a pegar todas as outras, e cada carta traz pontos negativos (cabeças de boi). Vence quem acumular menos pontos. Exige atenção, tática e uma pitada de sorte." tabindex="0" role="button">
+                <div class="jogo-moldura">
+                  <img src="img/pega-em-6.jpeg" alt="Caixa do jogo Pega em 6!" loading="lazy">
+                </div>
+                <div class="jogo-info">
+                  <p class="card-indice">Estratégia</p>
+                  <h3>Pega em 6!</h3>
+                  <p>Jogue suas cartas com cuidado: a sexta da fila faz você levar todas.</p>
+                </div>
+              </article>
+              <article class="jogo" data-reveal data-categoria="social" data-titulo="Cidade Dorme" data-tag="Dedução social" data-img="img/cidade-dorme.jpeg" data-resumo="À noite o assassino age; de dia, a cidade inteira tenta descobrir quem é." data-dinamica="Blefe, observação e argumento." data-detalhe="Um narrador conduz a história: quando a cidade dorme, o assassino escolhe uma vítima em segredo. De dia, todos debatem e votam em quem acham que é o culpado. Há também papéis especiais, como a médica e a detetive. Vale blefar, observar e argumentar muito bem." tabindex="0" role="button">
+                <div class="jogo-moldura">
+                  <img src="img/cidade-dorme.jpeg" alt="Cartas do jogo Cidade Dorme" loading="lazy">
+                </div>
+                <div class="jogo-info">
+                  <p class="card-indice">Dedução social</p>
+                  <h3>Cidade Dorme</h3>
+                  <p>À noite o assassino age; de dia, a cidade inteira tenta descobrir quem é.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+             <section class="secao" id="faq">
+          <div class="container container-estreito">
+            <header class="secao-cabeca">
+              <span class="secao-num">06</span>
+              <div>
+                <p class="script">dúvidas</p>
+                <h2 class="titulo-secao"><span class="mascara"><span class="mascara-inner">Perguntas frequentes</span></span></h2>
+              </div>
+            </header>
+            <p class="intro" data-reveal>Respostas rápidas sobre minha formação, metas de estudo e interesses na área de tecnologia.</p>
+
+            <div class="faq-lista" id="faqLista">
+              <article class="faq-item" data-reveal>
+                <h3 class="faq-cabecalho">
+                  <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-resp-1" id="faq-perg-1">
+                    <span class="faq-num">01</span>
+                    <span>Por que escolhi Análise e Desenvolvimento de Sistemas (ADS)?</span>
+                    <span class="faq-icone" aria-hidden="true"></span>
+                  </button>
+                </h3>
+                <div class="faq-painel" id="faq-resp-1" role="region" aria-labelledby="faq-perg-1" aria-hidden="true">
+                  <div class="faq-painel-conteudo">
+                    <p class="faq-resposta">Escolhi ADS por ser uma graduação tecnológica objetiva e alinhada à prática de mercado, permitindo construir uma base sólida em programação, lógica e bancos de dados em menos tempo. Essa formação atende tanto à entrada rápida na área quanto ao requisito de nível superior para concursos públicos.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq-item" data-reveal>
+                <h3 class="faq-cabecalho">
+                  <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-resp-2" id="faq-perg-2">
+                    <span class="faq-num">02</span>
+                    <span>Como concilio a faculdade com o foco em concursos públicos?</span>
+                    <span class="faq-icone" aria-hidden="true"></span>
+                  </button>
+                </h3>
+                <div class="faq-painel" id="faq-resp-2" role="region" aria-labelledby="faq-perg-2" aria-hidden="true">
+                  <div class="faq-painel-conteudo">
+                    <p class="faq-resposta">Encaro a graduação como parte estratégica da minha preparação. Disciplinas como Algoritmos, Modelagem de Dados e Engenharia de Software aparecem com frequência nos editais de TI e áreas correlatas, então aproveito o semestre para consolidar os fundamentos teóricos junto com exercícios regulares.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq-item" data-reveal>
+                <h3 class="faq-cabecalho">
+                  <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-resp-3" id="faq-perg-3">
+                    <span class="faq-num">03</span>
+                    <span>O que desperta meu interesse em Segurança da Informação e Inteligência Artificial?</span>
+                    <span class="faq-icone" aria-hidden="true"></span>
+                  </button>
+                </h3>
+                <div class="faq-painel" id="faq-resp-3" role="region" aria-labelledby="faq-perg-3" aria-hidden="true">
+                  <div class="faq-painel-conteudo">
+                    <p class="faq-resposta">Acredito que sistemas confiáveis dependem tanto da proteção de dados quanto do uso inteligente da informação. Tenho interesse em entender boas práticas de segurança digital, privacidade e governança, ao mesmo tempo em que acompanho como a Inteligência Artificial pode apoiar a automação e a tomada de decisão com responsabilidade.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq-item" data-reveal>
+                <h3 class="faq-cabecalho">
+                  <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-resp-4" id="faq-perg-4">
+                    <span class="faq-num">04</span>
+                    <span>Como organizo minha rotina e quais ferramentas utilizo nos estudos?</span>
+                    <span class="faq-icone" aria-hidden="true"></span>
+                  </button>
+                </h3>
+                <div class="faq-painel" id="faq-resp-4" role="region" aria-labelledby="faq-perg-4" aria-hidden="true">
+                  <div class="faq-painel-conteudo">
+                    <p class="faq-resposta">Mantenho um cronograma semanal dividido entre aulas, revisão ativa e prática de código. No dia a dia, utilizo VS Code para escrever HTML, CSS e JavaScript, Git e GitHub para versionar meus projetos acadêmicos e anotações estruturadas para revisar conteúdos técnicos e matérias de concurso.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq-item" data-reveal>
+                <h3 class="faq-cabecalho">
+                  <button class="faq-pergunta" type="button" aria-expanded="false" aria-controls="faq-resp-5" id="faq-perg-5">
+                    <span class="faq-num">05</span>
+                    <span>Estou aberta a projetos acadêmicos e oportunidades de estágio?</span>
+                    <span class="faq-icone" aria-hidden="true"></span>
+                  </button>
+                </h3>
+                <div class="faq-painel" id="faq-resp-5" role="region" aria-labelledby="faq-perg-5" aria-hidden="true">
+                  <div class="faq-painel-conteudo">
+                    <p class="faq-resposta">Sim. Embora esteja no 1º período, tenho grande interesse em participar de projetos de extensão, grupos de estudo e processos seletivos de estágio em tecnologia — especialmente em ambientes organizados onde eu possa aprender na prática, contribuir com dedicação e evoluir tecnicamente.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p class="script script-claro">assinatura</p>
+          <p class="footer-nome">Sophia<br>Oliveira</p>
+          <p class="creditos">Projeto acadêmico de Análise e Desenvolvimento de Sistemas (1º Período), feito por <strong>Sophia Oliveira dos Santos</strong>.</p>
+          <p class="tech-titulo">Desenvolvido com</p>
+          <ul class="tech">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>GitHub Pages</li>
+          </ul>
+          <button class="btn btn-claro magnetico" id="btnTopoFooter" type="button">Voltar ao topo</button>
+          <p class="copy">&copy; <span id="ano">2026</span> Sophia Oliveira</p>
+        </div>
+      </footer>
+    </div>
+
+    <aside class="trilho" aria-label="Painel do portfólio">
+      <div class="trilho-bloco">
+        <p class="trilho-kicker">Em foco</p>
+        <p class="script script-claro">rota</p>
+        <ul class="checagem checagem-trilho">
+          <li>Base técnica em ADS</li>
+          <li>Segurança da Informação</li>
+          <li>Inteligência Artificial</li>
+          <li>Concursos públicos</li>
+        </ul>
+      </div>
+      <div class="trilho-bloco">
+        <p class="script script-claro">seções</p>
+        <nav class="trilho-nav" aria-label="Atalhos das seções">
+          <a href="#inicio"><span>01</span> Início</a>
+          <a href="#sobre"><span>02</span> Sobre</a>
+          <a href="#aprendendo"><span>03</span> Aprendendo</a>
+          <a href="#hobbies"><span>04</span> Hobbies</a>
+          <a href="#faq"><span>05</span> FAQ</a>
+        </nav>
+      </div>
+      <div class="trilho-bloco trilho-assinatura">
+        <span class="monograma">S</span>
+        <p>Sophia Oliveira dos Santos</p>
+        <p class="trilho-meta">Brasília, DF · ADS · 1º período</p>
+      </div>
+    </aside>
+  </div>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo" hidden>
+    <div class="modal-caixa">
+      <button class="modal-fechar magnetico" id="modalFechar" type="button" aria-label="Fechar">&times;</button>
+      <img id="modalImg" src="" alt="">
+      <div class="modal-texto">
+        <p class="card-indice" id="modalTag"></p>
+        <h3 id="modalTitulo"></h3>
+        <p class="modal-resumo" id="modalResumo"></p>
+        <h4>Como funciona</h4>
+        <p id="modalDetalhe"></p>
+        <h4>Dinâmica</h4>
+        <p id="modalDinamica"></p>
+        <h4>Por que faz parte dos meus hobbies</h4>
+        <p id="modalPorque"></p>
+      </div>
+    </div>
+  </div>
+
+  <button class="topo magnetico" id="btnTopo" type="button" aria-label="Voltar ao topo" hidden>&uarr;</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
